@@ -97,6 +97,7 @@ ul li {
 }
 /*About me*/
 #about{
+  margin-top: 100px;
   width: 100%;
   height: auto;
 }
@@ -123,6 +124,7 @@ ul li {
     margin-bottom: 12px;
     padding-bottom: 12px;
 }
+
 .about-social{
   margin-left: -40px;
 }
@@ -130,4 +132,21 @@ ul li {
     font-size: 25px;
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     margin: 0 10px 10px 0;
+}
+/*Skills*/
+.circles-text {
+    font-size: 1.5em !important;
+}
+#skills{
+  margin-top: 100px;
+}
+.skills h4{
+    border-bottom: 1px solid #eeeeee;
+    color: #727272;
+    font-size: 19px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+.skills .circle{
+  padding-top: 30px;
 }
