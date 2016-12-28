@@ -15,6 +15,13 @@ ul li {
     display: inline-block;
     list-style-type: none;
 }
+.justify{
+  text-align: justify;
+}
+a:hover, a:focus, a:active {
+    color: none;
+    text-decoration: none;
+}
 
 /*Navbar*/
 .navbar{
@@ -149,4 +156,15 @@ ul li {
 }
 .skills .circle{
   padding-top: 30px;
+}
+/*Experience*/
+
+#experience{
+  padding-top: 100px;
+}
+.experience-subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+
 }
