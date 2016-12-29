@@ -72,3 +72,34 @@ jQuery(document).ready(function() { // makes sure the whole site is loaded
 // full-width-checkbox
 $("[name='full-width-checkbox']").bootstrapSwitch();
 
+
+$(document).ready(function () {
+  $(document).on("scroll", onScroll);
+
+  $('nav a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+    $(document).off("scroll");
+
+    $('nav a').each(function () {
+      $(this).removeClass('active');
+    })
+    $(this).addClass('active');
+
+    var target = this.hash;
+    $target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top-25
+    }, 500, 'swing', function () {
+      window.location.hash = target;
+      $(document).on("scroll", onScroll);
+    });
+  });
+});
+
+function onScroll(event){
+  var scrollPosition = $(document).scrollTop();
+  $('nav a').each(function () {
+    var currentLink = $(this);
+    var refElement = $(currentLink.attr("href"));
+  });
+}

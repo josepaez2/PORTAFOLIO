@@ -40,7 +40,7 @@
         <div id="status">&nbsp;</div>
     </div>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="127">
 <nav class="navbar navbar-static-top navbar-default navbar-inverse" role="navigation" id="header">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display, Left NavBar -->
@@ -60,7 +60,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="javascript:void(0);">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
              </ul>
         </div><!-- navbar-collapse -->
     </div><!-- container -->
@@ -70,7 +70,7 @@
     <h1 class="home-title text-center">HI! I'M <span class="name">JEFFERSON BERNAL</span></h1>
     <h2 class="home-subtitle text-center"> ELECTRONIC ENGINEER AND RUBY ON RAILS FULL-STACK DEVELOPER </h2>
     <div class="text-center">
-      <a class="btn btn-info" href="#"><span class="fa fa-paper-plane-o"></span>HIRE ME</a>
+      <a class="btn btn-info" href="#contact"><span class="fa fa-paper-plane-o"></span>HIRE ME</a>
     </div>
   </div>
 </section>
@@ -306,46 +306,62 @@
     </div>
   </div>
 </section>
-
+<section id="contact">
+  <div class="container">
+   <div class="row">
+     <div class="col-md-12">
+       <h2 class="right-line">Contact Me</h2>
+     </div>
+     <div class="row">
+       <h3 class="text-center about-subtitle">AT THIS MOMENT I'M LOOKING FOR A REMOTE JOB OR  FREELANCE WORK</h3>
+     </div>
+   </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <div class="person-info2">
+          <h3 class="about-subtitle">Contact Information</h3>
+          <h5><span><i class="fa fa-thumb-tack" aria-hidden="true"></i></span>Medellin - Colombia</h5>
+          <h5><span><i class="fa fa-mobile" aria-hidden="true"></i></span>+57 3148112185</h5>
+          <h5><span><i class="fa fa-skype" aria-hidden="true"></i></span>jeferbc</h5>
+          <h5><span><i class="fa fa-envelope" aria-hidden="true"></i></span>Jeffe.bernal@gmail.com</h5>
+          <h5><span><i class="fa fa-globe" aria-hidden="true"></i></span>pages.io</h5>
+        </div>
+        <div class="about-social">
+          <ul>
+            <li><a href="" class="social-icon-ar circle git"><i class="fa fa-github"></i></a></li>
+            <li><a href="" class="social-icon-ar circle linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="" class="social-icon-ar circle facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="" class="social-icon-ar circle twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="" class="social-icon-ar circle instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="" class="social-icon-ar circle google-plus"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+      <div class="contact-form">
+        <form action="https://getsimpleform.com/messages?form_api_token=033252d3f8a76751dbd11bedcfbd873e" method="post" class="form-horizontal">
+            <div class="form-group">
+              <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+              <input type='hidden' name='redirect_to' value='file:///home/jeferbc/FullStack/HTML/Personal_Profile/home_profile.html' />
+              <!-- all your input fields here.... -->
+              <input type="email" class="form-control" placeholder="Email" name="email">
+              <br>
+              <textarea class="form-control" rows="7" placeholder="Message" name="message"></textarea>
+              <br>
+              <div>
+                <button class="btn btn-info" type="submit"><span class="fa fa-paper-plane-o"></span>SEND</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer id="footer">
-    <p>&copy; 2014 <a href="#">Artificial Reason</a>, inc. All rights reserved.</p>
+    <p>&copy; 2016 <a href="#">Jefferson Bernal Cardona</a>, Full-Stack Rails Web Developer</p>
 </footer>
-
-</div> <!-- boxed -->
-</div> <!-- sb-site -->
-
-<div class="sb-slidebar sb-right">
-    <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search...">
-        <span class="input-group-btn">
-            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-        </span>
-    </div><!-- /input-group -->
-
-    <h2 class="slidebar-header no-margin-bottom">Navigation</h2>
-    <ul class="slidebar-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio_topbar.html">Portfolio</a></li>
-        <li><a href="page_about3.html">About us</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="page_contact.html">Contact</a></li>
-    </ul>
-
-    <h2 class="slidebar-header">Social Media</h2>
-    <div class="slidebar-social-icons">
-        <a href="#" class="social-icon-ar rss"><i class="fa fa-rss"></i></a>
-        <a href="#" class="social-icon-ar facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="social-icon-ar twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="social-icon-ar pinterest"><i class="fa fa-pinterest"></i></a>
-        <a href="#" class="social-icon-ar instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="social-icon-ar wordpress"><i class="fa fa-wordpress"></i></a>
-        <a href="#" class="social-icon-ar linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="social-icon-ar flickr"><i class="fa fa-flickr"></i></a>
-        <a href="#" class="social-icon-ar vine"><i class="fa fa-vine"></i></a>
-        <a href="#" class="social-icon-ar dribbble"><i class="fa fa-dribbble"></i></a>
-    </div>
-</div> <!-- sb-slidebar sb-right -->
 <div id="back-top">
     <a href="#header"><i class="fa fa-chevron-up"></i></a>
 </div>
