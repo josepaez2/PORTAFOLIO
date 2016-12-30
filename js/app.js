@@ -74,6 +74,14 @@ $("[name='full-width-checkbox']").bootstrapSwitch();
 
 
 $(document).ready(function () {
+  $("#portfolio").on("click", "a", function(e){
+     var idItem = $(this).attr("id").substring(10);
+     e.preventDefault();
+     $(".carousel-inner div").each(function(){
+         $(this).removeClass('active');
+     })
+     $("#" + idItem).addClass('active');
+  });
   $(document).on("scroll", onScroll);
 
   $('nav a[href^="#"]').on('click', function (e) {

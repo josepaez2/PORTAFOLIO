@@ -237,7 +237,7 @@
           <img src="img/profile.png" class="img-responsive" alt="Image">
           <div class="caption-ar">
             <div class="caption-content">
-              <a class="animated fadeInDown" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i>More info</a>
+              <a class="animated fadeInDown" data-toggle="modal" data-target="#myModal" id="portfolio-profile"><i class="fa fa-search"></i>More info</a>
               <h4 class="caption-title">Personal Profile</h4>
             </div>
           </div>
@@ -248,7 +248,7 @@
             <img src="img/48_street.png" class="img-responsive" alt="Image">
             <div class="caption-ar">
               <div class="caption-content">
-                <a class="animated fadeInDown" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i>More info</a>
+                <a class="animated fadeInDown" data-toggle="modal" data-target="#myModal" id="portfolio-street"><i class="fa fa-search"></i>More info</a>
                 <h4 class="caption-title">48 Street</h4>
               </div>
             </div>
@@ -259,7 +259,7 @@
             <img src="img/flowoverstack.png" class="img-responsive" alt="Image">
             <div class="caption-ar">
               <div class="caption-content">
-                  <a class="animated fadeInDown" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i>More info</a>
+                  <a class="animated fadeInDown" data-toggle="modal" data-target="#myModal" id="portfolio-flow"><i class="fa fa-search"></i>More info</a>
                   <h4 class="caption-title">Flow Overstack</h4>
               </div>
             </div>
@@ -270,7 +270,7 @@
             <img src="img/superblog.png" class="img-responsive" alt="Image">
             <div class="caption-ar">
               <div class="caption-content">
-                  <a class="animated fadeInDown" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i>More info</a>
+                  <a class="animated fadeInDown" data-toggle="modal" data-target="#myModal" id="portfolio-superblog"><i class="fa fa-search"></i>More info</a>
                   <h4 class="caption-title">SuperBlog</h4>
               </div>
             </div>
@@ -281,7 +281,7 @@
             <img src="img/store.png" class="img-responsive" alt="Image">
             <div class="caption-ar">
               <div class="caption-content">
-                  <a class="animated fadeInDown" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i>More info</a>
+                  <a class="animated fadeInDown" data-toggle="modal" data-target="#myModal" id="portfolio-store"><i class="fa fa-search"></i>More info</a>
                   <h4 class="caption-title">Store</h4>
               </div>
             </div>
@@ -293,22 +293,22 @@
   <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item active">
+                <div class="item active" id="profile">
                     <img class="img-responsive" src="img/profile.png" alt="...">
                 </div>
-                <div class="item">
+                <div class="item" id="street">
                     <img class="img-responsive" src="img/48_street.png" alt="...">
                 </div>
-                <div class="item">
+                <div class="item" id="flow">
                     <img class="img-responsive" src="img/flowoverstack.png" alt="...">
                 </div>
-                <div class="item active">
+                <div class="item" id="superblog">
                     <img class="img-responsive" src="img/superblog.png" alt="...">
                 </div>
-                <div class="item">
+                <div class="item" id="store">
                     <img class="img-responsive" src="img/store.png" alt="...">
                 </div>
             </div>
