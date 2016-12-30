@@ -173,7 +173,7 @@ textarea{
   width: 360px;
   border: 8px solid #fff;
 }
-@media (max-width: 1024px){
+@media (max-width: 1200px){
     .photo{
             height: 300px;
             width: 300px;
