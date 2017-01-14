@@ -10,7 +10,7 @@ $(document).on('click','a.smooth', function(e){
 
 (function($) {
     $(document).ready(function() {
-      $.slidebars();
+        $.slidebars();
     });
 }) (jQuery);
 
@@ -74,40 +74,40 @@ $("[name='full-width-checkbox']").bootstrapSwitch();
 
 
 $(document).ready(function () {
-  $("#portfolio").on("click", "a", function(e){
-     var idItem = $(this).attr("id").substring(10);
-     e.preventDefault();
-     $(".carousel-inner div").each(function(){
-         $(this).removeClass('active');
-     })
-     $("#" + idItem).addClass('active');
-  });
-  $(document).on("scroll", onScroll);
-
-  $('nav a[href^="#"]').on('click', function (e) {
-    e.preventDefault();
-    $(document).off("scroll");
-
-    $('nav a').each(function () {
-      $(this).removeClass('active');
-    })
-    $(this).addClass('active');
-
-    var target = this.hash;
-    $target = $(target);
-    $('html, body').stop().animate({
-      'scrollTop': $target.offset().top-25
-    }, 500, 'swing', function () {
-      window.location.hash = target;
-      $(document).on("scroll", onScroll);
+    $("#portfolio").on("click", ".more_info", function(e){
+        e.preventDefault();
+        var idItem = $(this).attr("id").substring(10);
+        $(".carousel-inner div").each(function(){
+            $(this).removeClass('active');
+        })
+        $("#" + idItem).addClass('active');
     });
-  });
+    $(document).on("scroll", onScroll);
+
+    $('nav a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+
+        $('nav a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+
+        var target = this.hash;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top-25
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
 });
 
 function onScroll(event){
-  var scrollPosition = $(document).scrollTop();
-  $('nav a').each(function () {
-    var currentLink = $(this);
-    var refElement = $(currentLink.attr("href"));
-  });
+    var scrollPosition = $(document).scrollTop();
+    $('nav a').each(function () {
+        var currentLink = $(this);
+        var refElement = $(currentLink.attr("href"));
+    });
 }
