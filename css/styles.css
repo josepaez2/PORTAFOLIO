@@ -243,6 +243,7 @@ textarea{
 #portfolio{
     margin-top: 100px;
 }
+
 .info{
     border-radius: 5px;
     width: 100%;
@@ -260,7 +261,6 @@ textarea{
 .info .title{
     color: #00bcd4;
     font-size: 17px;
-    margin-left: 40px;
 }
 .visit {
     background-color: rgba(128, 128, 128, 0.5);
@@ -299,6 +299,20 @@ textarea{
 .img-caption-ar img {
     width: 358px;
     height: 230px;
+}
+@media(max-width: 1000px){
+    .info .sub-title{
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-size: 10px;
+        line-height: 1em;
+        margin-left: 5px;
+    }
+    .info .title{
+        color: #00bcd4;
+        font-size: 13px;
+    }
+
 }
 /*Contact me*/
 #contact{
