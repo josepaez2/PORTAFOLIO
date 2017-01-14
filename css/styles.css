@@ -179,6 +179,8 @@ textarea{
     border: 8px solid #fff;
     border-radius: 200px;
     margin-left: 23px;
+    object-fit: cover;
+
 }
 @media (max-width: 1200px){
     .photo{
