@@ -102,10 +102,6 @@ $(document).ready(function () {
             $(document).on("scroll", onScroll);
         });
     });
-    $('.contact-form').on('click','.send',function(){
-        $('#email').val("");
-        $('#message').val("");
-    });
 });
 
 function onScroll(event){
