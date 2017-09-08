@@ -313,9 +313,6 @@ textarea{
         color: #00bcd4;
         font-size: 13px;
     }
-    .person-img{
-        image-orientation: 180deg;
-    }
 }
 
 @media(max-height: 660px){
